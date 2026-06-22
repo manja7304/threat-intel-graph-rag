@@ -1,0 +1,46 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "IOC-1",
+      "type": "ip",
+      "value": "192.0.2.44"
+    },
+    {
+      "id": "T1566",
+      "type": "technique",
+      "name": "Phishing"
+    },
+    {
+      "id": "T1059",
+      "type": "technique",
+      "name": "Command Interpreter"
+    }
+  ],
+  "links": [
+    {
+      "source": "IOC-1",
+      "target": "T1566",
+      "rel": "indicates"
+    },
+    {
+      "source": "T1566",
+      "target": "T1059",
+      "rel": "leads_to"
+    }
+  ],
+  "edges": [
+    {
+      "source": "IOC-1",
+      "target": "T1566",
+      "rel": "indicates"
+    },
+    {
+      "source": "T1566",
+      "target": "T1059",
+      "rel": "leads_to"
+    }
+  ]
+}

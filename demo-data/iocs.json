@@ -1,0 +1,14 @@
+[
+  {
+    "id": "IOC-1",
+    "type": "ip",
+    "value": "192.0.2.44",
+    "node_id": "IOC-1"
+  },
+  {
+    "id": "IOC-2",
+    "type": "domain",
+    "value": "evil.demo",
+    "node_id": null
+  }
+]
