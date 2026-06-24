@@ -159,9 +159,24 @@ streamlit run src/ui/app.py
 
 ## Video Demo
 
-[![Demo Video](https://img.shields.io/badge/Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=PLACEHOLDER)
+- **Walkthrough:** [`demos/WALKTHROUGH.md`](demos/WALKTHROUGH.md) — step-by-step demo with captured live output
+- **Captured JSON:** [`demos/captured/response.json`](demos/captured/response.json)
+- Record your 2-min Loom using `python scripts/run_demo.py` (works offline with `USE_MOCK_LLM=true`)
 
-> Record using [`demos/RECORDING_SCRIPT.md`](demos/RECORDING_SCRIPT.md) — show Streamlit graph + curl trace.
+### Live Demo Output
+
+```json
+{
+  "answer": "Related techniques: T1566 for query: ip 192.0.2.44",
+  "trace_count": 2,
+  "trace_first": {
+    "step": "vector_keyword",
+    "matches": 1
+  }
+}
+```
+
+> Full trace and request payloads in [`demos/captured/`](demos/captured/). See [`demos/RECORDING_SCRIPT.md`](demos/RECORDING_SCRIPT.md) for narration cues.
 
 ---
 

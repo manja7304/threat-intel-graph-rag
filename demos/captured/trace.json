@@ -1,0 +1,12 @@
+[
+  {
+    "step": "vector_keyword",
+    "matches": 1
+  },
+  {
+    "step": "graph_expand",
+    "techniques": [
+      "T1566"
+    ]
+  }
+]

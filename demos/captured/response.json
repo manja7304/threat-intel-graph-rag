@@ -1,0 +1,18 @@
+{
+  "answer": "Related techniques: T1566 for query: ip 192.0.2.44",
+  "trace": [
+    {
+      "step": "vector_keyword",
+      "matches": 1
+    },
+    {
+      "step": "graph_expand",
+      "techniques": [
+        "T1566"
+      ]
+    }
+  ],
+  "metadata": {
+    "ioc_count": 1
+  }
+}

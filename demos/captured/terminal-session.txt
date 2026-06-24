@@ -1,0 +1,33 @@
+# Terminal replay — Threat Intel Graph RAG
+# Captured: 2026-06-24 17:41:53 UTC · USE_MOCK_LLM=true
+
+$ cd threat-intel-graph-rag
+$ export USE_MOCK_LLM=true LLM_PROVIDER=mock
+$ python scripts/run_demo.py
+
+▸ Agent API demo
+  POST /api/v1/agent/run
+Request:
+{
+  "query": "ip 192.0.2.44"
+}
+
+HTTP 200
+{
+  "answer": "Related techniques: T1566 for query: ip 192.0.2.44",
+  "trace": [
+    {
+      "step": "vector_keyword",
+      "matches": 1
+    },
+    {
+      "step": "graph_expand",
+      "techniques": [
+        "T1566"
+      ]
+    }
+  ],
+  "metadata": {
+    "ioc_count": 1
+  }
+}
